@@ -1,0 +1,5 @@
+{
+  "name": "GigCalculator",
+  "description": "A professional budgeting and scheduling tool for concert promoters to calculate costs, revenues, and profits for multi-band lineup events.",
+  "requestFramePermissions": []
+}
