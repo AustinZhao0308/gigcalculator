@@ -1,20 +1,112 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+ 🎸 GigCalculator
 
-# Run and deploy your AI Studio app
+一个专为音乐演出活动设计的财务预算计算器，帮助演出策划者精确计算收入、成本和利润。
 
-This contains everything you need to run your app locally.
+## ✨ 功能特点
 
-View your app in AI Studio: https://ai.studio/apps/drive/1AnbfK3Jy4A7tieZ6QXl0bwx4YJ4haUmu
+- 📊 **财务概览面板** - 实时显示总收入、总成本和净利润
+- 🏢 **场地与票务管理** - 支持多票种设置、场地容量管理、收入分成计算
+- 🎤 **乐队阵容管理** - 管理演出阵容、演出费用和差旅支出
+- 📅 **日程安排** - 安排多日演出时间表
+- 💰 **周边商品管理** - 计算周边商品成本和潜在利润
+- 💾 **数据导出/导入** - 支持 JSON 格式的数据备份和恢复
+- 🌐 **双语支持** - 支持中文和英文界面切换
+- 📱 **响应式设计** - 完美适配桌面和移动设备
 
-## Run Locally
+## 🚀 快速开始
 
-**Prerequisites:**  Node.js
+### 环境要求
 
+- Node.js v16 或更高版本
+- npm 或 yarn
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 安装步骤
+
+1. **克隆仓库**
+   ```bash
+   git clone git@github.com:AustinZhao0308/gigcalculator.git
+   cd gigcalculator
+   ```
+
+2. **安装依赖**
+   ```bash
+   npm install --cache /tmp/npm-cache
+   ```
+   或者使用 legacy peer deps（如果遇到依赖冲突）：
+   ```bash
+   npm install --legacy-peer-deps
+   ```
+
+3. **启动开发服务器**
+   ```bash
+   npm run dev
+   ```
+
+4. **访问应用**
+   
+   打开浏览器访问 [http://localhost:3000](http://localhost:3000)
+
+## 🛠️ 技术栈
+
+- **前端框架**: React 18 + TypeScript
+- **构建工具**: Vite 6
+- **图表库**: Recharts
+- **图标库**: Lucide React
+- **样式**: Tailwind CSS
+
+## 📖 使用指南
+
+### 1. 场地与票务设置
+
+- 设置演出场地信息（名称、容量、保底费用）
+- 配置票务策略（票种、价格、发行量、预期销量）
+- 设置场地收入分成比例
+
+### 2. 添加乐队阵容
+
+- 添加演出乐队信息
+- 设置演出费用（Show Fee）
+- 记录差旅费用（交通、住宿、补贴等）
+
+### 3. 安排演出日程
+
+- 为多日演出安排时间表
+- 为每个时段分配乐队
+
+### 4. 管理其他支出
+
+- 添加宣传推广费用
+- 管理周边商品成本和销售预期
+
+### 5. 导出/导入数据
+
+- **导出**: 点击页面右上角的"导出"按钮，将当前演出数据保存为 JSON 文件
+- **导入**: 点击"导入"按钮，选择之前导出的 JSON 文件恢复数据
+
+## 📦 构建部署
+
+```bash
+# 构建生产版本
+npm run build
+
+# 预览生产版本
+npm run preview
+```
+
+构建后的文件将输出到 `dist` 目录。
+
+## 🤝 贡献
+
+欢迎提交 Issue 和 Pull Request！
+
+## 📄 许可证
+
+MIT License
+
+## 👤 作者
+
+AustinZhao0308
+
+---
+
+⭐ 如果这个项目对你有帮助，欢迎给个 Star！
